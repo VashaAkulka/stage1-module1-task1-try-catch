@@ -16,7 +16,6 @@ public class ParseIntegers {
                     "JDK 17 has released on 14 September 2021 with 10 new features, 2 feature removals and 2 feature deprecations."
                             .split(" "));
 
-    private static final Logger log = Logger.getLogger(ParseIntegers.class.getName());
 
     public static void main(String[] args) {
         Iterator<String> words = WORDS.iterator();
@@ -28,12 +27,12 @@ public class ParseIntegers {
                 int number = Integer.parseInt(next);
                 sum += number;
             } catch(NumberFormatException err) {
-                justWords.append(next);
+                justWords.append(next).append(" ");
             }
 
         }
-        log.info(String.format("Sum is %d", sum));
-        log.info("Just words:%s" + justWords);
+        System.out.println("Sum is " + sum);
+        System.out.println("Just words:" + justWords);
     }
 }
 
