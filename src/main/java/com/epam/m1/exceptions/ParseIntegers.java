@@ -32,7 +32,7 @@ public class ParseIntegers {
             }
 
         }
-        log.info("Sum is %d" + sum);
+        log.info(String.format("Sum is %d", sum));
         log.info("Just words:%s" + justWords);
     }
 }
