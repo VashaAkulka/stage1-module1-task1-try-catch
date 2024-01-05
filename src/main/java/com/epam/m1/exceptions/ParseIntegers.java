@@ -32,8 +32,8 @@ public class ParseIntegers {
             }
 
         }
-        log.info("Sum is " + sum);
-        log.info("Just words:" + justWords);
+        log.info("Sum is %d" + sum);
+        log.info("Just words:%s" + justWords);
     }
 }
 
